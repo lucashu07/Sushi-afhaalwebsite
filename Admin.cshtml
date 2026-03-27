@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Admin";
+}
+
+<h1>Gerecht toevoegen</h1>
+
+<form asp-action="AddGerecht" method="post">
+
+    <input name="Naam" placeholder="Naam" />
+    <br />
+
+    <input name="Prijs" placeholder="Prijs" />
+    <br />
+
+    <input name="AantalStuks" placeholder="Aantal stuks" />
+    <br />
+
+    <input name="Afbeelding" placeholder="Afbeelding URL (/images/...)" />
+    <br />
+
+    <input name="Ingredienten" placeholder="Ingrediënten" />
+    <br />
+
+    <button type="submit">Toevoegen</button>
+
+</form>

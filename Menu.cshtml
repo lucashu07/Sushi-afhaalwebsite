@@ -1,0 +1,30 @@
+﻿@model List<Sushi_afhaalwebsite.Models.Gerecht>
+
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h1>Menu</h1>
+
+<div class="menu-grid">
+
+@foreach (var item in Model)
+{
+<a asp-controller="Home" asp-action="Details" asp-route-id="@item.Id" class="menu-item-link">
+
+			<div class="menu-item">
+        <img src="@item.Afbeelding" />
+
+        <h2>@item.Naam</h2>
+
+        <p>€@item.Prijs</p>
+
+        <p>@item.AantalStuks stuks</p>
+
+			</div>
+
+    </a>
+}
+
+
+</div>

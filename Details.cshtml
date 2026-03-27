@@ -1,0 +1,22 @@
+﻿@model Sushi_afhaalwebsite.Models.Gerecht
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div style="display:flex; gap:40px; padding:20px;">
+
+    <div style="flex:1;">
+        <img src="@Model.Afbeelding" style="width:100%; border-radius:10px;" />
+    </div>
+
+    <div style="flex:1;">
+        <h1>@Model.Naam</h1>
+
+        <h3>€@Model.Prijs</h3>
+
+        <p><strong>Ingrediënten:</strong></p>
+        <p>@Model.Ingredienten</p>
+    </div>
+
+</div>
